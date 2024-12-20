@@ -7,7 +7,7 @@ function Register() {
             Crea tu cuenta PassRoute
           </h2>
           <p className="mt-2 text-center text-sm text-gray-400">
-            Join the party and start exploring events!
+            ¡Únete a la fiesta y comienza a explorar eventos!
           </p>
         </div>
         <form className="mt-8 space-y-6" action="#" method="POST">
@@ -15,7 +15,7 @@ function Register() {
           <div className="rounded-md shadow-sm -space-y-px">
             <div>
               <label htmlFor="username" className="sr-only">
-                Username
+                nombre de usuario
               </label>
               <input
                 id="username"
@@ -23,12 +23,12 @@ function Register() {
                 type="text"
                 required
                 className="appearance-none rounded-none relative block w-full px-3 py-2 border border-gray-700 placeholder-gray-500 text-white rounded-t-md focus:outline-none focus:ring-purple-500 focus:border-purple-500 focus:z-10 sm:text-sm bg-gray-800"
-                placeholder="Username"
+                placeholder="Nombre de usuario"
               />
             </div>
             <div>
               <label htmlFor="email-address" className="sr-only">
-                Email address
+                dirección de correo
               </label>
               <input
                 id="email-address"
@@ -37,7 +37,7 @@ function Register() {
                 autoComplete="email"
                 required
                 className="appearance-none rounded-none relative block w-full px-3 py-2 border border-gray-700 placeholder-gray-500 text-white focus:outline-none focus:ring-purple-500 focus:border-purple-500 focus:z-10 sm:text-sm bg-gray-800"
-                placeholder="Email address"
+                placeholder="Dirección de correo electrónico"
               />
             </div>
             <div>
@@ -51,14 +51,14 @@ function Register() {
                 autoComplete="new-password"
                 required
                 className="appearance-none rounded-none relative block w-full px-3 py-2 border border-gray-700 placeholder-gray-500 text-white rounded-b-md focus:outline-none focus:ring-purple-500 focus:border-purple-500 focus:z-10 sm:text-sm bg-gray-800"
-                placeholder="Password"
+                placeholder="Contraseña"
               />
             </div>
           </div>
 
             <div className="text-sm">
-              <a href="#" className="font-medium text-purple-500 hover:text-purple-400">
-                Already have an account?
+              <a href="/auth/ingreso" className="font-medium text-purple-500 hover:text-purple-400">
+                ¿Ya tienes una cuenta?
               </a>
             </div>
 
@@ -67,7 +67,7 @@ function Register() {
               type="submit"
               className="group relative w-full flex justify-center py-2 px-4 border border-transparent text-sm font-medium rounded-md text-white bg-purple-600 hover:bg-purple-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-purple-500"
             >
-              Register
+              Registrarse
             </button>
           </div>
         </form>
