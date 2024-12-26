@@ -46,7 +46,7 @@ function Login() {
           </div>
 
           <div className="text-sm">
-            <Link href="#" className="font-medium text-purple-500 hover:text-purple-400">
+            <Link href="/auth/olvidada" className="font-medium text-purple-500 hover:text-purple-400">
               ¿Olvidaste tu contraseña?
             </Link>
           </div>
