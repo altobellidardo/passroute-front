@@ -48,7 +48,7 @@ export default function AboutUs() {
             Si usted es un asistente a la fiesta que busca su próxima aventura o un organizador de eventos que desea llegar a una audiencia más amplia, PassRoute está aquí para conectarlo con oportunidades increíbles.
             </p>
             <div className="text-center">
-              <Link href="/auth/registro" className="bg-purple-600 hover:bg-purple-700 text-white font-bold py-3 px-8 rounded-full inline-block transition-colors">
+              <Link href="/auth/registro" className="border-2 border-purple-600 hover:bg-purple-700 text-white font-bold py-3 px-6 rounded-full inline-flex items-center transition-colors">
                 ¡Comienza hoy!
               </Link>
             </div>
