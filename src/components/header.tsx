@@ -25,7 +25,7 @@ function Header() {
           <ul className='flex space-x-6'>
             <li><HeaderLink href='/' active={pathname === '/'}>Inicio</HeaderLink></li>
             <li><HeaderLink href='/eventos' active={pathname === '/eventos'}>Eventos</HeaderLink></li>
-            <li><HeaderLink href='/nosotros' active={pathname === '/about'}>Nosotros</HeaderLink></li>
+            <li><HeaderLink href='/nosotros' active={pathname === '/nosotros'}>Nosotros</HeaderLink></li>
           </ul>
         </nav>
 
