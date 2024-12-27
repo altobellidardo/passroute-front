@@ -1,4 +1,6 @@
+import Footer from '@/components/footer'
 import { ArrowRight } from 'lucide-react'
+import Link from 'next/link'
 
 export default function Home () {
   return (
@@ -7,9 +9,9 @@ export default function Home () {
       <section className='py-60 text-center'>
         <h1 className='text-5xl font-bold mb-4'>Bienvenido a <span className='text-purple-600'>PassRoute</span></h1>
         <p className='text-xl mb-8'>¡Encuentra y promociona los eventos más populares!</p>
-        <a href='/eventos' className='border-2 border-purple-600 hover:bg-purple-700 text-white font-bold py-3 px-6 rounded-full inline-flex items-center transition-colors'>
+        <Link href='/eventos' className='border-2 border-purple-600 hover:bg-purple-700 text-white font-bold py-3 px-6 rounded-full inline-flex items-center transition-colors'>
           Explorar Eventos <ArrowRight className='ml-2' />
-        </a>
+        </Link>
       </section>
 
       <section id='about' className='py-20'>
@@ -31,9 +33,7 @@ export default function Home () {
       </section>
     </main>
 
-    <footer className='bg-purple-900 py-3 text-center'>
-      <p>&copy; 2024 PassRoute. All rights reserved.</p>
-    </footer>
+    <Footer />
     </>
   )
 }
