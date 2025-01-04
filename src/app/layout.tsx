@@ -1,6 +1,7 @@
 import './globals.css'
 import Header from '@/components/header'
 import { poppins, michroma } from '@/utils/fonts'
+import { ToastContainer } from 'react-toastify'
 
 export const metadata = {
   title: 'PassRoute - Tu portal de eventos',
@@ -14,6 +15,12 @@ function RootLayout ({ children }: { children: React.ReactNode }) {
         <div className='min-h-screen flex flex-col'>
           <Header />
           {children}
+          <ToastContainer
+            position='bottom-right'
+            theme='dark'
+            hideProgressBar
+            pauseOnHover={false}
+          />
         </div>
       </body>
     </html>
