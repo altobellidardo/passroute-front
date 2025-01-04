@@ -31,7 +31,7 @@ function EventsPage () {
 
       <section className='pb-20 mx-auto px-4 flex flex-col items-center space-y-4'>
         <h3 className='text-2xl font-bold text-center'>Para ver todos los eventos disponibles, registrate o inicia sesion</h3>
-        <Link href='/auth/registro' className='border-2 border-purple-600 hover:bg-purple-700 text-white font-bold py-1 px-3 rounded-xl inline-flex items-center transition-colors'>
+        <Link href='/auth/registro' className='border-2 border-purple-600 hover:bg-purple-700 text-white font-bold py-3 px-6 rounded-full inline-flex items-center transition-colors'>
           Registrarse
         </Link>
       </section>
