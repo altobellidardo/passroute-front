@@ -31,9 +31,9 @@ function Header() {
 
         {isAuthPage
           ? <h5 className='text-purple-500 font-semibold'>Únete a la comunidad</h5>
-          : (<div className='flex space-x-2'>
-            <Link href='/auth/ingreso' className='border-2 text-purple-100 border-purple-600 hover:bg-purple-700 font-semibold py-1 px-4 rounded-lg transition-colors'>Ingresar</Link>
-            <Link href='/auth/registro' className='border-2 border-purple-600 bg-purple-600 hover:bg-purple-700 text-purple-100 font-semibold py-1 px-4 rounded-lg transition-colors'>Registrarse</Link>
+          : (<div className='flex space-x-4'>
+            <Link href='/auth/ingreso' className='border-2 text-purple-100 border-purple-600 hover:bg-purple-700 font-semibold py-1 px-4 rounded-xl transition-colors'>Ingresar</Link>
+            <Link href='/auth/registro' className='border-2 border-purple-600 bg-purple-600 hover:bg-purple-700 text-purple-100 font-semibold py-1 px-4 rounded-xl transition-colors'>Registrarse</Link>
           </div>)
         }
       </div>
