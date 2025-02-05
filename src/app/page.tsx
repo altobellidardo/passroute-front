@@ -5,7 +5,7 @@ import Link from 'next/link'
 export default function Home () {
   return (
     <>
-    <main className='flex-grow'>
+    <main className='flex-grow pb-20'>
       <section className='py-60 text-center'>
         <h1 className='text-5xl font-bold mb-4'>Bienvenido a <span className='text-purple-600'>PassRoute</span></h1>
         <p className='text-xl mb-8'>¡Encuentra y promociona los eventos más populares!</p>
