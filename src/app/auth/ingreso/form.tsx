@@ -3,9 +3,12 @@
 import { loginSubmit } from "@/actions/auth"
 import PasswordInput from "@/components/passwordInput"
 import Link from "next/link"
+import { useRouter } from "next/navigation"
 import { toast } from "react-toastify"
 
 function LoginForm() {
+  const router = useRouter()
+
   async function login(formData: FormData) {
     const res = await loginSubmit(formData)
 
@@ -13,6 +16,7 @@ function LoginForm() {
       toast.error(res.error)
     } else {
       toast.success("Has iniciado sesión correctamente")
+      router.push("/dashboard")
     }
   }
 
