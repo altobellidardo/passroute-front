@@ -21,7 +21,9 @@ function EventsPage () {
                   <p className='flex items-center mb-2'><Calendar className='mr-2' size={18} /> {event.date}</p>
                   <p className='flex items-center mb-2'><MapPin className='mr-2' size={18} /> {event.location}</p>
                   <p className='flex items-center mb-4'><Music className='mr-2' size={18} /> {event.genre}</p>
-                  <a href='#' className='bg-purple-600 hover:bg-purple-700 text-white font-bold py-2 px-4 rounded inline-block transition-colors'>Get Tickets</a>
+                  <a href='#' className='bg-purple-600 hover:bg-purple-700 text-white font-bold py-2 px-4 rounded inline-block transition-colors'>
+                    Ver más
+                  </a>
                 </div>
               </div>
             ))}
@@ -30,7 +32,7 @@ function EventsPage () {
       </section>
 
       <section className='pb-20 mx-auto px-4 flex flex-col items-center space-y-4'>
-        <h3 className='text-2xl font-bold text-center'>Para ver todos los eventos disponibles, registrate o inicia sesion</h3>
+        <h3 className='text-2xl font-bold text-center'>Para ver todos los eventos disponibles, crea tu cuenta</h3>
         <Link href='/auth/registro' className='border-2 border-purple-600 hover:bg-purple-700 text-white font-bold py-2 px-6 rounded-2xl inline-flex items-center transition-colors'>
           Registrarse
         </Link>
