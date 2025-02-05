@@ -1,23 +1,45 @@
-import { cn } from "@/libs/tailwind"
+import { cn } from '@/libs/tailwind';
 
 interface ButtonProps extends React.ButtonHTMLAttributes<HTMLButtonElement> {
-  variant?: 'primary' | 'secondary'
+  variant?: 'primary' | 'secondary';
+  size?: 'sm' | 'md' | 'xl';
+  rounded?: boolean;
 }
+
+const baseStyles = 'rounded-xl font-semibold transition-colors duration-200'
+
+const sizeStyles = {
+  sm: 'px-4 py-1 text-sm',
+  md: 'px-6 py-2 text-base',
+  xl: 'px-8 py-3 text-lg'
+};
 
 const ButtonStyles = {
-  primary: 'border-2 text-purple-100 border-purple-600 hover:bg-purple-700 font-semibold py-1 px-4 rounded-xl transition-colors',
-  secondary: 'border-2 border-purple-600 bg-purple-600 hover:bg-purple-700 text-purple-100 font-semibold py-1 px-4 rounded-xl transition-colors'
-}
+  primary: 'border-2 border-purple-600 text-purple-100 hover:bg-purple-700',
+  secondary: 'border-2 border-purple-600 text-purple-100 bg-purple-600 hover:bg-purple-700'
+};
 
-function Button ({ children, className, variant, ...props }: ButtonProps) {
+function Button({
+  children,
+  className,
+  variant = 'primary',
+  size = 'md',
+  rounded,
+  ...props
+}: ButtonProps) {
   return (
     <button
-      className={cn(ButtonStyles[variant || 'primary'], className)}
+      className={cn(
+        sizeStyles[size],
+        ButtonStyles[variant],
+        baseStyles, className,
+        { 'rounded-full': rounded }
+      )}
       {...props}
     >
       {children}
     </button>
-  )
+  );
 }
 
-export default Button
+export default Button;

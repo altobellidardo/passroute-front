@@ -34,10 +34,10 @@ function Header() {
           ? <h5 className='text-purple-500 font-semibold'>Únete a la comunidad</h5>
           : (<div className='flex space-x-4'>
             <Link href='/auth/ingreso'>
-              <Button>Ingresar</Button>
+              <Button size='sm' className='text-base'>Ingresar</Button>
             </Link>
             <Link href='/auth/registro'>
-              <Button variant='secondary'>Registrarse</Button>
+              <Button size='sm' variant='secondary' className='text-base'>Registrarse</Button>
             </Link>
           </div>)
         }
