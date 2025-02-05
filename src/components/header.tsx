@@ -3,6 +3,7 @@
 import { cn } from '@/libs/tailwind'
 import Link from 'next/link'
 import { usePathname } from 'next/navigation'
+import Button from '@/components/ui/button'
 
 function HeaderLink ({ href, children, active }: { href: string, children: React.ReactNode, active: boolean }) {
   const classes = cn('hover:text-purple-500 transition-colors', {'text-purple-500 font-bold': active })
@@ -32,8 +33,12 @@ function Header() {
         {isAuthPage
           ? <h5 className='text-purple-500 font-semibold'>Únete a la comunidad</h5>
           : (<div className='flex space-x-4'>
-            <Link href='/auth/ingreso' className='border-2 text-purple-100 border-purple-600 hover:bg-purple-700 font-semibold py-1 px-4 rounded-xl transition-colors'>Ingresar</Link>
-            <Link href='/auth/registro' className='border-2 border-purple-600 bg-purple-600 hover:bg-purple-700 text-purple-100 font-semibold py-1 px-4 rounded-xl transition-colors'>Registrarse</Link>
+            <Link href='/auth/ingreso'>
+              <Button>Ingresar</Button>
+            </Link>
+            <Link href='/auth/registro'>
+              <Button variant='secondary'>Registrarse</Button>
+            </Link>
           </div>)
         }
       </div>
